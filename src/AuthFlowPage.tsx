@@ -137,7 +137,7 @@ export default function AuthFlowPage() {
         <div className="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
             {/* --- Пуш-уведомление --- */}
             {showPush && (
-                <div className="fixed top-0 left-0 right-0 p-4 z-50">
+                <div className="fixed top-4 left-0 right-0 p-4 z-50">
                     <div className="push-notification w-full max-w-sm mx-auto bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg border dark:border-gray-700">
                         <p className="font-bold">Новое сообщение</p>
                         <p className="text-sm text-gray-600 dark:text-gray-300">Для входа используйте ОТП: один, два, четыре, 0</p>

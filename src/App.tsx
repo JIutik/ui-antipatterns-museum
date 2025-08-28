@@ -1,11 +1,8 @@
 // src/App.tsx
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import LandingPage from './LandingPage.tsx'; // Исправленный путь
-import AuthFlowPage from './AuthFlowPage.tsx'; // Исправленный путь
+import LandingPage from './LandingPage.tsx';
+import AuthFlowPage from './AuthFlowPage.tsx';
 
-// Этот basename нужно будет удалить перед финальной публикацией на GitHub Pages,
-// но для локальной разработки он может быть полезен.
-// Пока что оставим его пустым для простоты.
 const router = createBrowserRouter(
   [
     {
@@ -16,8 +13,11 @@ const router = createBrowserRouter(
       path: "/auth",
       element: <AuthFlowPage />,
     },
-  ]
-  // Убираем basename для упрощения локальной разработки
+  ],
+  {
+    // Возвращаем basename, чтобы роутер правильно работал на GitHub Pages
+    basename: "/ui-antipatterns-museum/",
+  }
 );
 
 function App() {

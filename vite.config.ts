@@ -4,6 +4,6 @@ import react from '@vitejs/plugin-react-swc'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // Эта строка заставит Vite запускать приложение в корне (/)
-  base: '/',
+  // Возвращаем базовый путь для публикации на GitHub Pages
+  base: '/ui-antipatterns-museum/',
 })
